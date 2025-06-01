@@ -10,7 +10,7 @@ HidroSafe é um **sistema embarcado** para monitoramento de nível de água, tem
 > [Link da simulação Wokwi](https://wokwi.com/projects/432332935854103553)  
 
 
-![Esquema do Circuito](https://imgur.com/eoxepAS)
+![Esquema do Circuito]([https://imgur.com/eoxepAS](https://imgur.com/gallery/gs-FLV4OmX#eoxepAS))
 
 
 ---
