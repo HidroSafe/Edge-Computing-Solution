@@ -194,3 +194,43 @@ HidroSafe é um **sistema embarcado** para monitoramento de nível de água, tem
 Este projeto é liberado sob a **MIT License**.
 
 ---
+
+
+---
+
+## 🛠️ Modo de Uso
+
+Para que o HidroSafe realize medições corretas de nível de água, o dispositivo deve ser instalado **no topo de uma estaca fixa**, fixada no assoalho do rio ou reservatório. A **altura de referência** (`altura_do_sensor`) corresponde à distância vertical entre o sensor ultrassônico e o leito (fundo) do corpo d'água. 
+
+- **Procedimento de Instalação**:  
+  1. Escolha um ponto estável no leito do rio ou reservatório.  
+  2. Finque firmemente uma estaca (￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼) de material resistente (aço galvanizado ou madeira tratada).  
+  3. Posicione o HidroSafe no topo da estaca, de modo que o sensor ultrassônico fique **horizontal** e voltado para baixo, em linha reta com o fundo.  
+  4. Mida a distância vertical do sensor até o fundo (valor inicial em cm) e configure `altura` usando o menu de configuração. 
+
+### Representação Visual
+
+```
+     Dispositivo HidroSafe
+      ┌────────────────┐
+      │  Sensor US     │  ← Sensor ultrassônico apontado para baixo
+      │  DHT22 & LCD   │
+      └────────────────┘
+            │
+            │  <-- distância medida (altura do sensor ao fundo)
+            ↓
+      ┌────────────────┐  ← Nível da água (superfície)
+      │                │
+      │                │
+      │   Fundo (leito)│  ← Estaca fixa no leito do rio
+      └────────────────┘
+```
+
+1. **Sensor Ultrassônico**: Envia e recebe pulsos de ultrassom verticalmente para medir a distância até o fundo.  
+2. **Cálculo de Nível**:  
+   - `distância_medida` = valor lido pelo ultrassônico (cm).  
+   - `nível_de_água` = `altura_do_sensor` (cm) − `distância_medida` (cm).  
+3. **Configuração de `altura`**: No menu de configuração, informe o valor exato da distância entre o sensor e o fundo, garantindo que todas as leituras de nível sejam calculadas corretamente.
+
+---
+
