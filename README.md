@@ -4,6 +4,15 @@
 
 HidroSafe é um **sistema embarcado** para monitoramento de nível de água, temperatura e umidade, com foco em **eventos de enchente**, **persistência em EEPROM** e **exibição dinâmica** de informações. O dispositivo roda em um **Arduino** e utiliza sensores ultrassônico, DHT22 e de chuva, além de um LCD I2C 16×2 e um teclado matricial 4×4 para navegação em menu.
 
+## Visão Geral do Circuito
+
+> **Simulação disponível no Wokwi:**  
+> [Link da simulação Wokwi](https://wokwi.com/projects/432332935854103553)  
+
+
+![Esquema do Circuito](https://imgur.com/eoxepAS)
+
+
 ---
 
 ## 🚀 Principais Features
